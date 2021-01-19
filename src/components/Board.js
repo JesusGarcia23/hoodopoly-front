@@ -1,4 +1,41 @@
 import React from "react";
+import Card from './StreetSquare'
+
+
+let bottomStreets = [
+		{
+			name : 'Little Haiti', 
+			price: '120',
+			color: 'light-blue', 
+			type: 'space property'
+		},
+		{
+			name : 'Little Havanna', 
+			price: '100',
+			color: 'light-blue',
+			type: 'space property'
+		},
+		{
+			name : 'Chance', 
+			color: 'light-blue', 
+			type: 'space chance'
+		},
+		{
+			name : 'Triad Place', 
+			price: '100',
+			color: 'light-blue',
+			type: 'space property'
+		},
+		{
+			name : 'Tootsies StripClub', 
+			price: '200',
+			type: 'space railroad'
+		},
+
+		// space railroad
+]
+
+
 
 const Board = () => {
   return (
@@ -26,13 +63,12 @@ const Board = () => {
           </div>
 
           <div class="row horizontal-row bottom-row">
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar light-blue"></div>
-                <div class="name">Little Haiti</div>
-                <div class="price">PRICE $120</div>
-              </div>
-            </div>
+						<Card
+							type="space property"
+							color="light-blue"
+							streetName="Little Haiti"
+							streetPrice="120"
+						/>
             <div class="space property">
               <div class="container">
                 <div class="color-bar light-blue"></div>
