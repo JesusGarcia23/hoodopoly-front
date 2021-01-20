@@ -2,62 +2,259 @@ import React from "react";
 import Card from './StreetSquare'
 
 
-let bottomStreets = [
-		{
+let bottomSquares = [
+		{ 
+      rowPosition : "row horizontal-row bottom-row",
 			name : 'Little Haiti', 
 			price: '$120',
 			color: 'light-blue', 
 			type: 'space property'
 		},
 		{
+      rowPosition : "row horizontal-row bottom-row",
 			name : 'Little Havanna', 
 			price: '$100',
 			color: 'light-blue',
 			type: 'space property'
 		},
 		{
+      rowPosition : "row horizontal-row bottom-row",
 			name : 'Chance', 
 			color: 'light-blue', 
 			type: 'space chance'
 		},
 		{
+      rowPosition : "row horizontal-row bottom-row",
 			name : 'Triad Place', 
 			price: '$100',
 			color: 'light-blue',
 			type: 'space property'
 		},
 		{
+      rowPosition : "row horizontal-row bottom-row",
 			name : 'Tootsies StripClub', 
 			price: '$200',
 			type: ' space railroad'
     },
     {
+      rowPosition : "row horizontal-row bottom-row",
 			name : 'Income Tax', 
       type: 'space fee income-tax',
       instructions:  'Pay 10% or $200'
     },
     {
+      rowPosition : "row horizontal-row bottom-row",
 			name : 'Baltic Avenue', 
 			price: '$50',
 			color: 'dark-purple',
 			type: 'space property'
     },
     {
+      rowPosition : "row horizontal-row bottom-row",
 			name : 'Community Chest', 
       type: 'space community-chest',
       instructions: 'Follow instructions on top card'
     },
     {
+      rowPosition : "row horizontal-row bottom-row",
 			name : 'MLK Blvd', 
 			price: '$50',
 			color: 'dark-purple',
 			type: 'space property'
     },
     
+   
+   
 
 		// space railroad comment
 ]
 
+let rightRow =[
+  {
+    rowPosition:"row vertical-row left-row",
+    name : 'Little Haiti', 
+    price: '$120',
+    color: 'light-blue', 
+    type: 'space property'
+  },
+  {
+    rowPosition:"row vertical-row left-row",
+    name : 'Little Havanna', 
+    price: '$100',
+    color: 'light-blue',
+    type: 'space property'
+  },
+  {
+    rowPosition:"row vertical-row left-row",
+    name : 'Chance', 
+    color: 'light-blue', 
+    type: 'space chance'
+  },
+  {
+    rowPosition:"row vertical-row left-row",
+    name : 'Triad Place', 
+    price: '$100',
+    color: 'light-blue',
+    type: 'space property'
+  },
+  {
+    rowPosition:"row vertical-row left-row",
+    name : 'Tootsies StripClub', 
+    price: '$200',
+    type: ' space railroad'
+  },
+  {
+    rowPosition:"row vertical-row left-row",
+    name : 'Income Tax', 
+    type: 'space fee income-tax',
+    instructions:  'Pay 10% or $200'
+  },
+  {
+    rowPosition:"row vertical-row left-row",
+    name : 'Baltic Avenue', 
+    price: '$50',
+    color: 'dark-purple',
+    type: 'space property'
+  },
+  {
+    rowPosition:"row vertical-row left-row",
+    name : 'Community Chest', 
+    type: 'space community-chest',
+    instructions: 'Follow instructions on top card'
+  },
+  {
+    rowPosition:"row vertical-row left-row",
+    name : 'MLK Blvd', 
+    price: '$50',
+    color: 'dark-purple',
+    type: 'space property'
+  },
+]
+
+let topRow =[
+  {
+    rowPosition:"row vertical-row right-row",
+    name : 'Little Haiti', 
+    price: '$120',
+    color: 'light-blue', 
+    type: 'space property'
+  },
+  {
+    rowPosition:"row vertical-row right-row",
+    name : 'Little Havanna', 
+    price: '$100',
+    color: 'light-blue',
+    type: 'space property'
+  },
+  {
+    rowPosition:"row vertical-row right-row",
+    name : 'Chance', 
+    color: 'light-blue', 
+    type: 'space chance'
+  },
+  {
+    rowPosition:"row vertical-row right-row",
+    name : 'Triad Place', 
+    price: '$100',
+    color: 'light-blue',
+    type: 'space property'
+  },
+  {
+    rowPosition:"row vertical-row right-row",
+    name : 'Tootsies StripClub', 
+    price: '$200',
+    type: ' space railroad'
+  },
+  {
+    rowPosition:"row vertical-row right-row",
+    name : 'Income Tax', 
+    type: 'space fee income-tax',
+    instructions:  'Pay 10% or $200'
+  },
+  {
+    rowPosition:"row vertical-row right-row",
+    name : 'Baltic Avenue', 
+    price: '$50',
+    color: 'dark-purple',
+    type: 'space property'
+  },
+  {
+    rowPosition:"row vertical-row right-row",
+    name : 'Community Chest', 
+    type: 'space community-chest',
+    instructions: 'Follow instructions on top card'
+  },
+  {
+    rowPosition:"row vertical-row right-row",
+    name : 'MLK Blvd', 
+    price: '$50',
+    color: 'dark-purple',
+    type: 'space property'
+  },
+]
+
+
+let bottomSqu= [
+  {
+    rowPosition:"row horizontal-row top-row",
+    name : 'Little Haiti', 
+    price: '$120',
+    color: 'light-blue', 
+    type: 'space property'
+  },
+  {
+    rowPosition:"row horizontal-row top-row",
+    name : 'Little Havanna', 
+    price: '$100',
+    color: 'light-blue',
+    type: 'space property'
+  },
+  {
+    rowPosition:"row horizontal-row top-row",
+    name : 'Chance', 
+    color: 'light-blue', 
+    type: 'space chance'
+  },
+  {
+    rowPosition:"row horizontal-row top-row",
+    name : 'Triad Place', 
+    price: '$100',
+    color: 'light-blue',
+    type: 'space property'
+  },
+  {
+    rowPosition:"row horizontal-row top-row",
+    name : 'Tootsies StripClub', 
+    price: '$200',
+    type: ' space railroad'
+  },
+  {
+    rowPosition:"row horizontal-row top-row",
+    name : 'Income Tax', 
+    type: 'space fee income-tax',
+    instructions:  'Pay 10% or $200'
+  },
+  {
+    rowPosition:"row horizontal-row top-row",
+    name : 'Baltic Avenue', 
+    price: '$50',
+    color: 'dark-purple',
+    type: 'space property'
+  },
+  {
+    rowPosition:"row horizontal-row top-row",
+    name : 'Community Chest', 
+    type: 'space community-chest',
+    instructions: 'Follow instructions on top card'
+  },
+  {
+    rowPosition:"row horizontal-row top-row",
+    name : 'MLK Blvd', 
+    price: '$50',
+    color: 'dark-purple',
+    type: 'space property'
+  },
+]
 
 
 const Board = () => {
@@ -84,92 +281,74 @@ const Board = () => {
             </div>
             <div class="arrow fa fa-long-arrow-left"></div>
           </div>
-
-          <div class="row horizontal-row bottom-row">
-            {bottomStreets.map((street) => (
+            
+            <div className="row vertical-row left-row">
+            {bottomSquares.map((street, index) => (
+              
               <Card
+                rowPosition={street.rowPosition}
+                key={street.name}
                 type={street.type}
                 color={street.color}
                 streetName={street.name}
                 streetPrice={street.price}
                 instructions={street.instructions}
               />
+          
             )) }
-						{/* <Card
-							type="space property"
-							color="light-blue"
-							streetName="Little Haiti"
-							streetPrice="120"
-						/>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar light-blue"></div>
-                <div class="name">Little Havanna</div>
-                <div class="price">Price $100</div>
-              </div>
             </div>
-            <div class="space chance">
-              <div class="container">
-                <div class="name">Chance</div>
-                <i class="drawing fa fa-question"></i>
-              </div>
+
+
+            <div className="row vertical-row right-row">
+            {rightRow.map((street, index) => (
+              
+              <Card
+                rowPosition={street.rowPosition}
+                key={street.name}
+                type={street.type}
+                color={street.color}
+                streetName={street.name}
+                streetPrice={street.price}
+                instructions={street.instructions}
+              />
+          
+            )) }
             </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar light-blue"></div>
-                <div class="name">Triad Place</div>
-                <div class="price">Price $100</div>
-              </div>
+
+            <div className="row horizontal-row top-row">
+            {topRow.map((street, index) => (
+              
+              <Card
+                rowPosition={street.rowPosition}
+                key={street.name}
+                type={street.type}
+                color={street.color}
+                streetName={street.name}
+                streetPrice={street.price}
+                instructions={street.instructions}
+              />
+          
+            )) }
             </div>
-            <div class="space railroad">
-              <div class="container">
-                <div class="name">Tootsie's Strip Club</div>
-                <i class="drawing fa fa-subway"></i>
-                <div class="price">Price $200</div>
-              </div>
+
+
+
+            <div className="row horizontal-row bottom-row">
+            {bottomSqu.map((street, index) => (
+              
+              <Card
+                rowPosition={street.rowPosition}
+                key={street.name}
+                type={street.type}
+                color={street.color}
+                streetName={street.name}
+                streetPrice={street.price}
+                instructions={street.instructions}
+              />
+          
+            )) }
             </div>
-            <div class="space fee income-tax">
-              <div class="container">
-                <div class="name">Income Tax</div>
-                <div class="diamond"></div>
-                <div class="instructions">
-                  Pay 10%
-                  <br />
-                  or
-                  <br />
-                  $200
-                </div>
-              </div>
-              M
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar dark-purple"></div>
-                <div class="name">Baltic Avenue</div>
-                <div class="price">Price $50</div>
-              </div>
-            </div>
-            <div class="space community-chest">
-              <div class="container">
-                <div class="name">Community Chest</div>
-                <i class="drawing fa fa-cube"></i>
-                <div class="instructions">Follow instructions on top card</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar dark-purple"></div>
-                <div class="name three-line-name">
-                  Mediter-
-                  <br />
-                  ranean
-                  <br />
-                  Avenue
-                </div>
-                <div class="price">Price $50</div>
-              </div>
-            </div> */}
-          </div>
+          
 
           <div class="space corner jail">
             <div class="just">Just</div>
@@ -188,71 +367,6 @@ const Board = () => {
             <div class="visiting">Visiting</div>
           </div>
 
-          <div class="row vertical-row left-row">
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar orange"></div>
-                <div class="name">New York Avenue</div>
-                <div class="price">Price $200</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar orange"></div>
-                <div class="name">Tennessee Avenue</div>
-                <div class="price">Price $180</div>
-              </div>
-            </div>
-            <div class="space community-chest">
-              <div class="container">
-                <div class="name">Community Chest</div>
-                <i class="drawing fa fa-cube"></i>
-                <div class="instructions">Follow instructions on top card</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar orange"></div>
-                <div class="name">St. James Avenue</div>
-                <div class="price">Price $180</div>
-              </div>
-            </div>
-            <div class="space railroad">
-              <div class="container">
-                <div class="name long-name">Pennsylvania Railroad</div>
-                <i class="drawing fa fa-subway"></i>
-                <div class="price">Price $200</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar purple"></div>
-                <div class="name">Virginia Avenue</div>
-                <div class="price">Price $160</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar purple"></div>
-                <div class="name">States Avenue</div>
-                <div class="price">Price $140</div>
-              </div>
-            </div>
-            <div class="space utility electric-company">
-              <div class="container">
-                <div class="name">Electric Company</div>
-                <i class="drawing fa fa-lightbulb-o"></i>
-                <div class="price">Price $150</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar purple"></div>
-                <div class="name">St. Charles Place</div>
-                <div class="price">Price $140</div>
-              </div>
-            </div>
-          </div>
 
           <div class="space corner free-parking">
             <div class="container">
@@ -262,70 +376,6 @@ const Board = () => {
             </div>
           </div>
 
-          <div class="row horizontal-row top-row">
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar red"></div>
-                <div class="name">Kentucky Avenue</div>
-                <div class="price">Price $220</div>
-              </div>
-            </div>
-            <div class="space chance">
-              <div class="container">
-                <div class="name">Chance</div>
-                <i class="drawing fa fa-question blue"></i>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar red"></div>
-                <div class="name">Indiana Avenue</div>
-                <div class="price">Price $220</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar red"></div>
-                <div class="name">Illinois Avenue</div>
-                <div class="price">Price $200</div>
-              </div>
-            </div>
-            <div class="space railroad">
-              <div class="container">
-                <div class="name">B & O Railroad</div>
-                <i class="drawing fa fa-subway"></i>
-                <div class="price">Price $200</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar yellow"></div>
-                <div class="name">Atlantic Avenue</div>
-                <div class="price">Price $260</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar yellow"></div>
-                <div class="name">Ventnor Avenue</div>
-                <div class="price">Price $260</div>
-              </div>
-            </div>
-            <div class="space utility waterworks">
-              <div class="container">
-                <div class="name">Waterworks</div>
-                <i class="drawing fa fa-tint"></i>
-                <div class="price">Price $120</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar yellow"></div>
-                <div class="name">Marvin Gardens</div>
-                <div class="price">Price $280</div>
-              </div>
-            </div>
-          </div>
 
           <div class="space corner go-to-jail">
             <div class="container">
@@ -334,72 +384,7 @@ const Board = () => {
               <div class="name">Jail</div>
             </div>
           </div>
-
-          <div class="row vertical-row right-row">
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar green"></div>
-                <div class="name">Pacific Avenue</div>
-                <div class="price">Price $300</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar green"></div>
-                <div class="name three-line-name">North Carolina Avenue</div>
-                <div class="price">Price $300</div>
-              </div>
-            </div>
-            <div class="space community-chest">
-              <div class="container">
-                <div class="name">Community Chest</div>
-                <i class="drawing fa fa-cube"></i>
-                <div class="instructions">Follow instructions on top card</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar green"></div>
-                <div class="name long-name">Pennsylvania Avenue</div>
-                <div class="price">Price $320</div>
-              </div>
-            </div>
-            <div class="space railroad">
-              <div class="container">
-                <div class="name">Short Line</div>
-                <i class="drawing fa fa-subway"></i>
-                <div class="price">Price $200</div>
-              </div>
-            </div>
-            <div class="space chance">
-              <div class="container">
-                <div class="name">Chance</div>
-                <i class="drawing fa fa-question"></i>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar dark-blue"></div>
-                <div class="name">Park Place</div>
-                <div class="price">Price $350</div>
-              </div>
-            </div>
-            <div class="space fee luxury-tax">
-              <div class="container">
-                <div class="name">Luxury Tax</div>
-                <div class="drawing fa fa-diamond"></div>
-                <div class="instructions">Pay $75.00</div>
-              </div>
-            </div>
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar dark-blue"></div>
-                <div class="name">Boardwalk</div>
-                <div class="price">Price $400</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> 
       </div>
     </div>
   );
