@@ -1,4 +1,64 @@
 import React from "react";
+import Card from './StreetSquare'
+
+
+let bottomStreets = [
+		{
+			name : 'Little Haiti', 
+			price: '$120',
+			color: 'light-blue', 
+			type: 'space property'
+		},
+		{
+			name : 'Little Havanna', 
+			price: '$100',
+			color: 'light-blue',
+			type: 'space property'
+		},
+		{
+			name : 'Chance', 
+			color: 'light-blue', 
+			type: 'space chance'
+		},
+		{
+			name : 'Triad Place', 
+			price: '$100',
+			color: 'light-blue',
+			type: 'space property'
+		},
+		{
+			name : 'Tootsies StripClub', 
+			price: '$200',
+			type: ' space railroad'
+    },
+    {
+			name : 'Income Tax', 
+      type: 'space fee income-tax',
+      instructions:  'Pay 10% or $200'
+    },
+    {
+			name : 'Baltic Avenue', 
+			price: '$50',
+			color: 'dark-purple',
+			type: 'space property'
+    },
+    {
+			name : 'Community Chest', 
+      type: 'space community-chest',
+      instructions: 'Follow instructions on top card'
+    },
+    {
+			name : 'MLK Blvd', 
+			price: '$50',
+			color: 'dark-purple',
+			type: 'space property'
+    },
+    
+
+		// space railroad comment
+]
+
+
 
 const Board = () => {
   return (
@@ -26,13 +86,21 @@ const Board = () => {
           </div>
 
           <div class="row horizontal-row bottom-row">
-            <div class="space property">
-              <div class="container">
-                <div class="color-bar light-blue"></div>
-                <div class="name">Little Haiti</div>
-                <div class="price">PRICE $120</div>
-              </div>
-            </div>
+            {bottomStreets.map((street) => (
+              <Card
+                type={street.type}
+                color={street.color}
+                streetName={street.name}
+                streetPrice={street.price}
+                instructions={street.instructions}
+              />
+            )) }
+						{/* <Card
+							type="space property"
+							color="light-blue"
+							streetName="Little Haiti"
+							streetPrice="120"
+						/>
             <div class="space property">
               <div class="container">
                 <div class="color-bar light-blue"></div>
@@ -100,7 +168,7 @@ const Board = () => {
                 </div>
                 <div class="price">Price $50</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div class="space corner jail">
