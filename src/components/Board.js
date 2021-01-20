@@ -5,13 +5,13 @@ import Card from './StreetSquare'
 let bottomStreets = [
 		{
 			name : 'Little Haiti', 
-			price: '120',
+			price: '$120',
 			color: 'light-blue', 
 			type: 'space property'
 		},
 		{
 			name : 'Little Havanna', 
-			price: '100',
+			price: '$100',
 			color: 'light-blue',
 			type: 'space property'
 		},
@@ -22,17 +22,40 @@ let bottomStreets = [
 		},
 		{
 			name : 'Triad Place', 
-			price: '100',
+			price: '$100',
 			color: 'light-blue',
 			type: 'space property'
 		},
 		{
 			name : 'Tootsies StripClub', 
-			price: '200',
-			type: 'space railroad'
-		},
+			price: '$200',
+			type: ' space railroad'
+    },
+    {
+			name : 'Income Tax', 
+      type: 'space fee income-tax',
+      instructions:  'Pay 10% or $200'
+    },
+    {
+			name : 'Baltic Avenue', 
+			price: '$50',
+			color: 'dark-purple',
+			type: 'space property'
+    },
+    {
+			name : 'Community Chest', 
+      type: 'space community-chest',
+      instructions: 'Follow instructions on top card'
+    },
+    {
+			name : 'MLK Blvd', 
+			price: '$50',
+			color: 'dark-purple',
+			type: 'space property'
+    },
+    
 
-		// space railroad
+		// space railroad comment
 ]
 
 
@@ -63,7 +86,16 @@ const Board = () => {
           </div>
 
           <div class="row horizontal-row bottom-row">
-						<Card
+            {bottomStreets.map((street) => (
+              <Card
+                type={street.type}
+                color={street.color}
+                streetName={street.name}
+                streetPrice={street.price}
+                instructions={street.instructions}
+              />
+            )) }
+						{/* <Card
 							type="space property"
 							color="light-blue"
 							streetName="Little Haiti"
@@ -136,7 +168,7 @@ const Board = () => {
                 </div>
                 <div class="price">Price $50</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div class="space corner jail">
